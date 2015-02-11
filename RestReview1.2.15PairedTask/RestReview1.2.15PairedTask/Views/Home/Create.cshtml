@@ -1,0 +1,30 @@
+﻿@model RestReview1._2._15PairedTask.Models.CreateReviewViewModel
+@{
+    ViewBag.Title = "Create";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Name)<br />
+        @Html.TextBoxFor(m => m.Name)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Text)<br />
+        @Html.TextBoxFor(m => m.Text)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Cuisine)<br />
+        @Html.TextBoxFor(m => m.Cuisine)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Image)<br />
+        @Html.TextBoxFor(m => m.Image)
+    </div>
+    
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+}

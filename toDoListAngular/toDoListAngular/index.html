@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="toDoList">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3>
+                    To do list in AngularJS
+                </h3>
+            </div>
+        </div>
+        <div class="row clearfix" ng-controller="IndexController">
+            <div class="col-md-6 column">
+
+                <div class="form-group">
+                    <label for="">Task</label><input type="text" class="form-control" ng-model="task" />
+                </div>
+                <div class="form-group">
+                    <label for="">Priority</label><input type="text" class="form-control" ng-model="priority" />
+                </div>
+
+                <button type="submit" class="btn btn-default" ng-click="addTask()">Submit</button>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>
+                                Priority
+                            </th>
+                            <th>
+                                Task
+                            </th>
+                            <th>
+                                Time Started
+                            </th>
+                            <th>
+                                Time complete
+                            </th>
+                            <th>
+                                Mark done
+                            </th>
+                            <th>
+                                Delete
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="m in taskArray | orderBy:sortForMe:!reverse| orderBy:sortDone:!reverse">
+                            <td>
+                                {{m.priority}}
+                                
+                            </td>
+                            <td>
+                                {{m.task}}
+                            </td>
+                            
+                            <td>
+                                {{m.time | amCalendar}}
+                            </td>
+                            <td>
+                                {{m.timeToComplete | amCalendar}}
+                            </td>
+                            <td>
+                                <input type='button' value='Mark done' ng-click="markComplete(m)" ng-hide="{{m.hide}}" />
+                                {{m.complete}}
+                            </td>
+                            <td>
+                                <input type='button' value='Remove' ng-click="removeTask(m)" />
+                            </td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                <input type='button' value='Remove' ng-click="removeAllTask()" />
+
+
+
+
+
+
+
+
+
+            </div>
+            <div class="col-md-6 column">
+               
+            </div>
+        </div>
+    </div>
+
+
+
+
+   
+    
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    
+    <script src="Scripts/moment.js"></script>
+    <script src="Scripts/angular-moment.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

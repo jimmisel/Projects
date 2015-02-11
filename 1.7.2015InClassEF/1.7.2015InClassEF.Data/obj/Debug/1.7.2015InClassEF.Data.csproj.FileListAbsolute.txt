@@ -1,0 +1,14 @@
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\1.7.2015InClassEF.Data.dll.config
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\1.7.2015InClassEF.Data.dll
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\1.7.2015InClassEF.Data.pdb
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\1.7.2015InClassEF.Data.Model.dll
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\EntityFramework.dll
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\1.7.2015InClassEF.Data.Model.pdb
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\EntityFramework.xml
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\obj\Debug\1.7.2015InClassEF.Data.csprojResolveAssemblyReference.cache
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\obj\Debug\1.7.2015InClassEF.Data.dll
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\obj\Debug\1.7.2015InClassEF.Data.pdb
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\obj\Debug\_1._7._2015InClassEF.Data.Migrations.first.resources
+C:\Projects\1.7.2015InClassEF\1.7.2015InClassEF.Data\obj\Debug\1.7.2015InClassEF.Data.csproj.GenerateResource.Cache

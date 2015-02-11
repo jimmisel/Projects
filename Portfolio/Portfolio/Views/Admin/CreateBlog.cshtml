@@ -1,0 +1,45 @@
+﻿    @using Portfolio.Models
+    @model HomeViewModels
+
+    @{
+    ViewBag.Title = "CreateBlog";
+    }
+
+    <h2>CreateBlog</h2>
+
+    @using (Html.BeginForm())
+{
+        <div>
+            <p>
+                Title:<br />
+            </p>
+            <div class="form-group ">
+                @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div>
+            <p>
+                Image:<br />
+            </p>
+            <div class="form-group ">
+                @Html.TextBoxFor(m => m.ImgUrl, new { @class = "form-control" })
+            </div>
+        </div>
+
+        <div>
+            <p>
+                Body:<br />
+            </p>
+            <div class="form-group ">
+                @Html.TextAreaFor(m => m.Body)
+            </div>
+        </div>
+
+
+
+
+
+
+        <input type="submit" class="btn btn-default" value="Submit" />
+}

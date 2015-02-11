@@ -1,0 +1,14 @@
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\Portfolio.Data.Models.dll.config
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\Portfolio.Data.Models.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\Portfolio.Data.Models.pdb
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\EntityFramework.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\EntityFramework.SqlServer.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\EntityFramework.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\EntityFramework.SqlServer.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\obj\Release\Portfolio.Data.Models.csprojResolveAssemblyReference.cache
+C:\Projects\Portfolio\Portfolio.Data.Models\obj\Release\Portfolio.Data.Models.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\obj\Release\Portfolio.Data.Models.pdb

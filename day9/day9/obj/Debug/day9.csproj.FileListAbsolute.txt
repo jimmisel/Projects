@@ -1,0 +1,6 @@
+C:\Projects\day9\day9\bin\day9.dll.config
+C:\Projects\day9\day9\bin\day9.dll
+C:\Projects\day9\day9\bin\day9.pdb
+C:\Projects\day9\day9\obj\Debug\day9.csprojResolveAssemblyReference.cache
+C:\Projects\day9\day9\obj\Debug\day9.dll
+C:\Projects\day9\day9\obj\Debug\day9.pdb

@@ -1,0 +1,6 @@
+C:\Projects\angularRoutingDay13\angularRoutingDay13\bin\angularRoutingDay13.dll.config
+C:\Projects\angularRoutingDay13\angularRoutingDay13\bin\angularRoutingDay13.dll
+C:\Projects\angularRoutingDay13\angularRoutingDay13\bin\angularRoutingDay13.pdb
+C:\Projects\angularRoutingDay13\angularRoutingDay13\obj\Debug\angularRoutingDay13.csprojResolveAssemblyReference.cache
+C:\Projects\angularRoutingDay13\angularRoutingDay13\obj\Debug\angularRoutingDay13.dll
+C:\Projects\angularRoutingDay13\angularRoutingDay13\obj\Debug\angularRoutingDay13.pdb

@@ -1,0 +1,14 @@
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\Portfolio.Data.Models.dll.config
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\Portfolio.Data.Models.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\Portfolio.Data.Models.pdb
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\EntityFramework.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\EntityFramework.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\Portfolio\Portfolio.Data.Models\obj\Debug\Portfolio.Data.Models.dll
+C:\Projects\Portfolio\Portfolio.Data.Models\obj\Debug\Portfolio.Data.Models.pdb
+C:\Projects\Portfolio\Portfolio.Data.Models\obj\Debug\Portfolio.Data.Models.csprojResolveAssemblyReference.cache

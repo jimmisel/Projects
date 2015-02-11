@@ -1,0 +1,28 @@
+﻿@model IEnumerable<CSharpDay2.Models.Person>
+@{
+    ViewBag.Title = "About People";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+
+<table class="table-bordered table-striped">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Email</th>
+    </tr>
+
+
+
+    @foreach (var item in Model)
+    {
+       <tr>
+           <td>@item.Id</td>
+           <td>@item.Name</td>
+           <td>@item.Email</td>
+
+       </tr>
+    }
+
+</table>

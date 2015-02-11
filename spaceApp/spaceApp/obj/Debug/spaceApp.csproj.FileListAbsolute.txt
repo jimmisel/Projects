@@ -1,0 +1,6 @@
+C:\Projects\spaceApp\spaceApp\bin\spaceApp.dll.config
+C:\Projects\spaceApp\spaceApp\bin\spaceApp.dll
+C:\Projects\spaceApp\spaceApp\bin\spaceApp.pdb
+C:\Projects\spaceApp\spaceApp\obj\Debug\spaceApp.csprojResolveAssemblyReference.cache
+C:\Projects\spaceApp\spaceApp\obj\Debug\spaceApp.dll
+C:\Projects\spaceApp\spaceApp\obj\Debug\spaceApp.pdb

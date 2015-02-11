@@ -1,0 +1,2 @@
+<b>SQL Server</b>
+The foundation of Microsofts comprehensive data platform, SQL Server delivers breakthrough performance for mission-critical applications, using in-memory technologies, faster insights from any data to any user in familiar tools like Excel, and a resilient platform for building, deploying, and managing solutions that span on-premises and cloud.

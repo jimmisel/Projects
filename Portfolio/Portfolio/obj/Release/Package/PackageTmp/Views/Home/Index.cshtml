@@ -1,0 +1,165 @@
+﻿@model Portfolio.Models.HomeIndexViewModels
+
+@{
+    ViewBag.Title = "Home Page";
+}
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+            $.ajaxPrefilter(function (options) {
+                if (options.crossDomain && jQuery.support.cors) {
+                    var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+                    options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+                    
+                }
+            });
+            $('#ActivePost').DataTable({
+                searching: false,
+                ordering: false,
+                paging: true
+            });
+
+            $('#net').click(function () {
+                $("#ajaxCall").load("/Content/net.txt")
+            });
+            $('#csharp').click(function () {
+                $("#ajaxCall").load("/Content/csharp.txt")
+            });
+            $('#javascript').click(function () {
+                $("#ajaxCall").load("/Content/javascript.txt")
+            });
+            $('#sql').click(function () {
+                $("#ajaxCall").load("/Content/sql.txt")
+            });
+          
+            $('#hideMe').click(function () {
+                $("#hidden").slideToggle();
+            });
+            $('#hideMe2').click(function () {
+                $("#hidden2").slideToggle();
+            });
+
+            $('#hideMe3').click(function () {
+                $("#hidden3").slideToggle();
+            });
+
+        });
+        $("#fade").fadeIn(2000, function () {
+            $('#about').fadeIn(2000, function () {
+                $('#WhatIUse').fadeIn(2000, function () {
+                    $('#contact').fadeIn(2000);
+                });
+            });
+        });
+   
+
+     
+
+    </script>
+ }
+
+
+   
+<div >
+    <div id="content"></div>
+    <div id="fade" style="display:none" >
+
+
+        <center>
+            <h4>Recent Projects</h4>
+        </center>
+
+
+        @foreach (var b in Model.BlogPost)
+        {
+            if (b.IsDeleted == false)
+            {
+                <div class="row table-bordered" style="padding-top:10px;padding-bottom:10px; margin:10px; border-radius:5px; border-style:groove; border-color:steelblue;">
+                    <div class="col-md-7">
+                        <center>
+                            <img class="img-responsive" style="height:150px; width:700px; border-radius:5px" src="@b.ImgUrl ">
+                        </center>
+
+
+                    </div>
+                    <div class="col-md-5">
+                        <h3> @b.Title</h3>
+                        <h4> @b.DatePosted.ToShortTimeString() @b.DatePosted.ToLongDateString()</h4>
+                        <p>@Html.Raw(b.Body.Length > 100 ? b.Body.Substring(0, 100) : b.Body)...</p>
+
+                        <a class="btn btn-primary" href="/Home/ViewPost/@b.BlogId">View  <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                    </div>
+                </div>
+
+            }
+
+
+        }
+
+    </div>
+    <div id="about" style="background-color:#272b30; width:100%; color:white; border-radius:5px; display:none  ">
+        <div id="hideMe" class="glyphicon glyphicon-fullscreen"><center></center> </div>
+
+        <div id="hidden">
+
+
+            <center>
+                <h3>About Me</h3>
+                <p>
+                    <img src="~/Content/Images/jimmisel.jpg" style="height:150px; width:150px; border-radius:75px " />
+                </p>
+                I started Programming about 10 years ago. I got started with Html and css. Built many sites out of these before I moved on to learn Php and mysql. After spending a few years working freelance in my own time with these I started looking into other Languages. I learned Javascript. read up on xml and used it in a few small things. Then finally this past year i decied it was time to take this to the next level. I joined coder Camps to get a better understanding of Javascript(when I learned it, it was only used to validate forms) and learn some new things. I have learned alot about .net angularJS and Jquery. I Have learned to use visual studio also. I was using notepad++ for many years and still enjoy using it.
+
+
+            </center>
+        </div>
+       
+    </div>
+
+   
+
+    <div id="WhatIUse" style="margin:10px; display:none">
+        <div id="hideMe2" class="glyphicon glyphicon-fullscreen" style="width:10px;border-radius:5px;margin-left:-10px"><center></center> </div>
+        <div id="hidden2">
+            <center>
+                <h3>What I use</h3>
+                <p >
+                    <img src="~/Content/Images/aspmvc.jpg" style="height:100px; width:100px" id="net" />
+                    <img src="~/Content/Images/csharp.jpg" style="height:100px; width:100px" id="csharp" />
+                    <img src="~/Content/Images/javascript.jpg" style="height:100px; width:100px" id="javascript"/>
+                    <img src="~/Content/Images/sql.jpg" style="height:100px; width:100px" id="sql"/>
+                </p>
+               <p>
+    This is just a few of the things I use. click the icon to get a description of each.
+</p>
+
+                
+                    <div id="ajaxCall">
+
+                    </div>
+                
+            </center>
+                </div>
+        
+                
+            
+        </div>
+
+    <div id="contact" style=" background-color:#272b30; color:white; border-radius:5px;display:none">
+        <div id="hideMe3" class="glyphicon glyphicon-fullscreen" style="width:10px;border-radius:5px;"><center></center> </div>
+        <div id="hidden3">
+            <center>
+                <h3>Contact Me</h3>
+                <p>
+                    Contact me here on the forum or by email<br />
+                    jimsccportfolio@gmail.com<br />
+                    I will get back to use as soon as I can.
+                </p>
+            </center>
+</div>
+            
+        </div>
+
+
+ </div>

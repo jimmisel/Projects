@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")
+
+    
+    
+        <link href="~/Content/DataTables-1.10.4/css/jquery.dataTables.css" rel="stylesheet" />
+    <script src="~/Scripts/tinymce/tinymce.js"></script>
+   
+    <script>tinymce.init({
+    selector: "textarea",
+    theme: "modern",
+    plugins: [
+        "advlist autolink lists link image charmap print preview hr anchor pagebreak",
+        "searchreplace wordcount visualblocks visualchars code fullscreen",
+        "insertdatetime media nonbreaking save table contextmenu directionality",
+        "emoticons template paste textcolor colorpicker textpattern"
+    ],
+    toolbar1: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image",
+    toolbar2: "print preview media | forecolor backcolor emoticons",
+    image_advtab: true,
+    templates: [
+        { title: 'Test template 1', content: 'Test 1' },
+        { title: 'Test template 2', content: 'Test 2' }
+    ]
+ 
+
+});
+    
+
+        $(document).ready(function () {
+            $(".time").each(function () {
+                var date = $(this).text();
+                var formatted = moment(date).format();
+                $(this).text(formatted);
+            });
+        });
+    
+    
+    </script>
+ 
+</head>
+<body style="background-color:#272b30; ">
+    
+    <div class="navbar nav-pills  navbar-fixed-top" style=" margin: 0px auto; height: 10px; background-color:#272b30" >
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("Portfolio", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav" >
+                    <li >@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("My Work", "Projects", "Home")</li>
+                     <li>@Html.ActionLink("Forum", "Index", "Forum")</li>
+                    <li>@Html.ActionLink("More Info", "MyBlog", "Home") <li>
+                    <!--
+                         <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    -->
+                   
+                  
+
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content" style=" background-color:ghostwhite; border-radius:10px; margin-top:25px">
+        @RenderBody()
+        <hr />
+        
+    </div>
+    <footer style="vertical-align:bottom; height:10%; padding:25px; color:white"><center>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </center>
+        
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+    <script src="~/Scripts/jquery-2.1.3.js"></script>
+    <script src="~/Scripts/DataTables-1.10.4/jquery.dataTables.js"></script>
+    <script src="~/Scripts/moment.js"></script>
+   
+        
+      
+        @RenderSection("scripts", required: false)
+    
+        
+
+    
+
+
+</body>
+</html>

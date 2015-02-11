@@ -1,0 +1,33 @@
+﻿@using PetAdoption1_5_15.Models
+@model PetsIndexView
+@{
+    ViewBag.Title = "Cat";
+}
+
+<h2>Cat</h2>
+
+
+<table class="table-bordered table-striped">
+    <tr>
+        <th>Age</th>
+        <th>Name</th>
+        <th>Hair</th>
+        <th>Color</th>
+    </tr>
+
+    @foreach (var c in Model.Pets.OfType<Cat>())
+    {
+        <tr>
+            <td>@c.Age</td>
+            <td>@c.Name</td>
+            <td>@c.Hair</td>
+            <td>@c.Colors</td>
+
+        </tr>
+    }
+
+
+
+</table>
+
+

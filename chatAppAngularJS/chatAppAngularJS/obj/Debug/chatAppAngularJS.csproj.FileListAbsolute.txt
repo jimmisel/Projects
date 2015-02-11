@@ -1,0 +1,6 @@
+C:\Projects\chatAppAngularJS\chatAppAngularJS\bin\chatAppAngularJS.dll.config
+C:\Projects\chatAppAngularJS\chatAppAngularJS\bin\chatAppAngularJS.dll
+C:\Projects\chatAppAngularJS\chatAppAngularJS\bin\chatAppAngularJS.pdb
+C:\Projects\chatAppAngularJS\chatAppAngularJS\obj\Debug\chatAppAngularJS.csprojResolveAssemblyReference.cache
+C:\Projects\chatAppAngularJS\chatAppAngularJS\obj\Debug\chatAppAngularJS.dll
+C:\Projects\chatAppAngularJS\chatAppAngularJS\obj\Debug\chatAppAngularJS.pdb

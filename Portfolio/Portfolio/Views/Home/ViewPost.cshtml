@@ -1,0 +1,54 @@
+﻿@using Portfolio.Models
+@model HomeIndexViewModels
+@{
+    ViewBag.Title = "ViewPost";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<div>
+   
+  @foreach (var b in Model.BlogPost)
+  {
+     
+    <table class="table">
+        <thead>
+            <tr>
+                <td>
+                    <h4>@b.Title</h4><br />
+                    <small>
+                        @b.UserDisplayName<br />
+                        @b.DatePosted.ToShortTimeString() @b.DatePosted.ToLongDateString()
+                       
+                    </small>
+
+                </td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                   <center>
+                       <p><img src="@b.ImgUrl" style="height:300px; width:700px" /></p>
+                    </center> 
+                @Html.Raw(@b.Body)
+                </td>
+            </tr>
+        </tbody>
+    </table>
+  }
+  <center>Comments comming soon</center> 
+   
+   
+        
+
+       
+          
+            
+            
+</div>
+<p>
+   
+    @Html.ActionLink("Home", "Index")
+</p>

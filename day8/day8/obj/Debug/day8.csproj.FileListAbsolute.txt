@@ -1,0 +1,6 @@
+C:\Projects\day8\day8\bin\day8.dll.config
+C:\Projects\day8\day8\bin\day8.dll
+C:\Projects\day8\day8\bin\day8.pdb
+C:\Projects\day8\day8\obj\Debug\day8.csprojResolveAssemblyReference.cache
+C:\Projects\day8\day8\obj\Debug\day8.dll
+C:\Projects\day8\day8\obj\Debug\day8.pdb

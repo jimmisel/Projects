@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body style="background-color:#E6E6FA" >
+    <center>
+        <p style="padding: 20px 20px 20px 20px; background-color: #0026ff; width:1150px"><b>Chirper</b>
+            <button type="submit" class="btn btn-default hidden" onclick="chirpApp.createTweet()" id="tweetIt">Tweet it</button> <input type="text" id="tweet" maxlength="250" size="50">
+        </p>
+    </center>
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <div class="tabbable" id="tabs-775447">
+                    <ul class="nav nav-tabs">
+                        <li class="active" id="first">
+                            <a href="#panel-619898" data-toggle="tab">Profile</a>
+                        </li>
+                        <li id="makeActive">
+                            <a href="#panel-435220" data-toggle="tab">Friends</a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane active" id="panel-619898">
+                            
+                                <div class="col-md-4 column" style="background-color:#ffffff; padding-top: 10px; margin-right:10px">
+                                    <div id="proPic" style="padding-top: 10px"> </div>
+
+
+                                    <div id="changeTweets">
+                                        <a id="showMyTweets" role="button" class="btn" onclick="chirpApp.myTweetsOnly()">Show My Tweets</a><br />
+                                    </div>
+                                    <div id="changeTweets2" class="hidden">
+                                        <a id="showMyTweets" role="button" class="btn" onclick="chirpApp.tweetDisplay()">Show all Tweets</a><br />
+                                    </div>
+
+                                    <a id="modal-34214" href="#modal-container-34214" role="button" class="btn" data-toggle="modal" onclick="chirpApp.profileUpdate()">Edit Profile</a>
+
+                                    <div class="modal fade" id="modal-container-34214" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                                    <h4 class="modal-title" id="myModalLabel">
+                                                        Edit profile
+                                                    </h4>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <div class="form-group">
+
+                                                        <label for="name">Name</label><input type="text" class="form-control" id="editName" />
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <label for="Location">Location</label><input type="text" class="form-control" id="editLocation" />
+                                                    </div>
+                                                    <div class="form-group">
+
+                                                        <label for="Photo">Photo</label><input type="text" class="form-control" id="editPic" />
+                                                    </div>
+
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="chirpApp.saveProfile()">Save changes</button>
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            <div class="col-md-4 column" style="background-color:#ffffff; padding-top: 10px; margin-left:10px; margin-right:10px">
+                                <div id="displayTweet"></div>
+                            </div>
+
+                            <div class="col-md-4 column" style="background-color:#ffffff; padding-top: 10px; margin-left:10px; margin-right:10px">
+                                <div id="showFriends"></div>
+                            </div>
+   
+                </div>
+                <div class="tab-pane" id="panel-435220">
+                    
+
+
+                        <div class="col-md-4 column" style="background-color:#ffffff; padding-top: 10px; margin-right:10px ">
+                            <div id="showFriend"></div>
+                            <div id="friendProPic">
+
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 column" id="friendDisplayTweet" style="background-color:#ffffff; padding-top: 10px; margin-left:10px">
+
+                        </div>
+                        <div class="col-md-4 column">
+                            <div id="showFriends"></div>
+
+                        </div>
+
+
+
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+
+    <script src="Scripts/moment.js"></script>
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

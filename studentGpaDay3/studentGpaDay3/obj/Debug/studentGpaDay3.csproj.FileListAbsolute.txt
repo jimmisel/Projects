@@ -1,0 +1,6 @@
+C:\Projects\studentGpaDay3\studentGpaDay3\bin\studentGpaDay3.dll.config
+C:\Projects\studentGpaDay3\studentGpaDay3\bin\studentGpaDay3.dll
+C:\Projects\studentGpaDay3\studentGpaDay3\bin\studentGpaDay3.pdb
+C:\Projects\studentGpaDay3\studentGpaDay3\obj\Debug\studentGpaDay3.csprojResolveAssemblyReference.cache
+C:\Projects\studentGpaDay3\studentGpaDay3\obj\Debug\studentGpaDay3.dll
+C:\Projects\studentGpaDay3\studentGpaDay3\obj\Debug\studentGpaDay3.pdb

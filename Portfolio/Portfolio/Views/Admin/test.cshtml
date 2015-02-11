@@ -1,0 +1,70 @@
+﻿@{
+    Layout = null;
+   
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+
+    @section Scripts {
+        <script>
+            tinymce.init({
+                selector: 'textarea',
+                plugins: "table, image, hr, link, lists, code, textcolor",
+
+                tools: "inserttable",
+
+
+            });
+
+            //testing this out it works. It finally works YAY
+            //keep this code for later use
+            $.ajaxPrefilter(function (options) {
+                if (options.crossDomain && jQuery.support.cors) {
+                    var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+                    options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+                    //options.url = "http://cors.corsproxy.io/url=" + options.url;
+                }
+            });
+            $(document).ready(function () {
+                $(".time").each(function () {
+                    var date = $(this).text();
+                    var formatted = moment(date).format();
+                    $(this).text(formatted);
+                });
+
+
+                $('#click').click(function () {
+
+                    $('test').load('http://www.weather.com/weather/today/l/USPA1020:1:US');
+                });
+
+
+
+            });
+
+
+        </script>
+    }
+
+
+</head>
+<body>
+    <div id="test">
+    Lets load the whole weather page in here shall we?
+    </div>
+    
+    
+    <div>
+
+        <button id="click">test</button>
+    </div>
+
+    
+   
+</body>
+</html>

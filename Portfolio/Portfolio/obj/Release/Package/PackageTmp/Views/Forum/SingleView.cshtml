@@ -1,0 +1,267 @@
+﻿@model Portfolio.Models.NewSubPostViewModels
+@{
+    ViewBag.Title = "Forum";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+
+}
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $('#mySubForumPost').DataTable({
+                searching: false,
+                ordering: false,
+                paging: true
+            });
+
+
+        });
+
+
+
+    </script>
+}
+
+
+@foreach (var p in Model.Post)
+{
+
+    if (p.UserName == User.Identity.Name || User.IsInRole("Admin"))
+    {
+
+    }
+    else
+    {
+
+
+
+        //is the user logged in?
+        if (User.Identity.IsAuthenticated)
+        {
+
+            //top of the page to show the subscriber stuff
+
+            //if there are no subscribers for this post show the form to subscribe
+            if (Model.Subscribers.Count == 0)
+            {
+                //the form to subscribe
+                using (Html.BeginForm("Subscribe", "Forum", FormMethod.Post))
+                {
+
+                    <div class="checkbox">
+
+
+                        @Html.HiddenFor(t => t.PostId)
+                        <input type="submit" class="btn btn-default" value="SubScribe" />
+                    </div>
+                }
+            }
+            else
+            {
+                //if there are people subscribed lets make some checks while looping through
+                foreach (var s in Model.Subscribers)
+                {
+                    Model.SubScribeId = s.Id;
+                    //have they deleted it? if so show a resubscribe button
+                    if (s.IsDeleted == true)
+                    {
+                        <p>
+
+                            @using (Html.BeginForm("Subscribe", "Forum", FormMethod.Post))
+                            {
+
+                                <div class="checkbox">
+                                    <b> </b>
+                                    @Html.HiddenFor(t => t.SubScribeId)
+                                    @Html.HiddenFor(t => t.PostId)
+                                    <input type="submit" class="btn btn-success" value="ReSubScribe" />
+                                </div>
+                            }
+                        </p>
+                    }
+                    else
+                    {
+                        //if it is not marked as deleted then make sure your not showing the subscribe button again. let them unsubscribe
+                        if (s.UserName == User.Identity.Name)
+                        {
+                            using (Html.BeginForm("UnSubscribe", "Forum", FormMethod.Post))
+                            {
+
+                                <div class="checkbox">
+
+                                    @Html.HiddenFor(t => t.SubScribeId)
+                                    @Html.HiddenFor(t => t.PostId)
+                                    <input type="submit" class="btn btn-danger" value="Unsubscribe" />
+                                </div>
+                            }
+                        }
+                        else
+                        {
+                            if (s.UserName != User.Identity.Name)
+                            {
+                                //if they are not on the list give them the chance to get added to it
+                                using (Html.BeginForm("Subscribe", "Forum", FormMethod.Post))
+                                {
+                                    <div class="checkbox">
+
+                                        @Html.HiddenFor(t => t.PostId)
+                                        <input type="submit" class="btn btn-default" value="SubScribe" />
+                                    </div>
+
+                                }
+                            }
+
+                        }
+
+
+                    }
+                }
+
+            }
+
+        }
+
+    }
+
+
+    //end the checks for the subscribe crap lol only took 90 lines of code to see what to display for each person
+
+    <table class="table table-bordered" style="margin:10px; ">
+        <thead><tr style="border:none"></tr></thead>
+        <tbody>
+            <tr style="border:thin black">
+    <td width="15%"><b>@p.DisplayName </b><br /><img src="/Content/Images/default.jpg" style="height:50px; width:50px; border-radius:30px" /><small><br />Post Count: <br />Join Date: </small></td>
+
+    <td style="border:thin black">
+        <div style="background-color:firebrick; color:white; font-weight:800; margin:0px; padding-left: 5px; border-radius:1px"><div style="float:right; padding-right:10px"><small>@p.DatePosted.ToShortTimeString() @p.DatePosted.ToLongDateString()</small></div>@p.Title </div>
+
+        <br />@Html.Raw(p.Body)<br /><div style="float:right">
+            <small>
+                @if (p.UserName == User.Identity.Name || User.IsInRole("Admin"))
+                {
+                    //show the edit link if it is either of them
+                    @Html.ActionLink("Delete", "DeletePost", new { id = p.PostId }) <span>||</span>
+                    @Html.ActionLink("Edit", "EditPost", new { id = p.PostId })<br />
+                }
+            </small>
+        </div>
+    </td>
+        </tr>
+          </table>
+
+
+
+
+
+
+
+
+                if (Model.SubPosts.Count == 0)
+    {
+        <p><strong>Be the first to leave an answer!</strong></p>
+    }
+                else
+                {
+                    <table class="table table-bordered" style="margin:10px;  margin-top:25px" id="mySubForumPost">
+                        <thead>
+                        <tr style="border:none">
+                            <th></th>
+                            <th></th>
+                          
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var sp in Model.SubPosts)
+                            {
+
+                                if (sp.IsDeleted == false)
+                                {
+
+
+                                    //SubPost are displayed here only if they are not marked as deleted
+
+
+
+                                    <tr>
+                                        <td width="15%">
+                                            <b>
+                                                @sp.DisplayName
+                                            </b> <br /><img src="/Content/Images/default.jpg" style="height:50px; width:50px; border-radius:30px" /><small><br />Post Count: <br />Join Date:</small>
+
+                                        </td>
+                                        <td>
+                                            <div style="background-color:deepskyblue; color:white; font-weight:800; margin:0px; padding-left: 5px; border-radius:1px">
+                                                <div style="float:right; padding-right:10px "><small>@sp.DatePosted.ToShortTimeString()  @sp.DatePosted.ToLongDateString()<br /></small></div>
+                                                @if (sp.Title == null)
+                                                {
+                                                    sp.Title = "Re: " + p.Title;
+                                                }
+                                                @sp.Title <br />
+
+                                            </div>
+
+
+                                            <br />@Html.Raw(sp.Body)
+                                            <div style="float:right">
+                                                <small>
+                                                    @if (sp.UserName == User.Identity.Name || User.IsInRole("Admin"))
+                                                    {
+                                                        @Html.ActionLink("Delete", "DeleteSubPost", new { id = sp.SubPostId }) <span>||</span>
+                                                        @Html.ActionLink("Edit", "EditSubPost", new { id = sp.SubPostId })<br />
+                                                    }
+                                                </small>
+                                            </div>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                }
+
+                            }
+                        </tbody>
+                    </table>
+                }
+
+                if (User.Identity.IsAuthenticated)
+                {
+        <hr />
+        using (Html.BeginForm())
+        {
+            <div style="width:75%">
+                <b>Title:</b> @Html.TextBoxFor(t => t.Title, new { @class = "form-control" })<br />
+                @Html.TextAreaFor(t => t.Body)<br />
+                @Html.HiddenFor(t => t.PostId)
+                @Html.HiddenFor(t => t.UserId)
+
+
+                <p>
+                    <input type="submit" class="btn btn-default" value="Answer" />
+                </p>
+            </div>
+              
+        }
+    }
+
+
+}
+
+@if (!User.Identity.IsAuthenticated)
+{
+    <div style="border-top:double; border-color:black; margin:20px">
+        <p>
+            <center>
+                <b>Please <a href="/Account/Register">Register</a>  or <a href="/Account/Login">log in</a>   to Reply to this post</b>
+            </center>
+
+        </p>
+    </div>
+
+
+}
+
+
+
+
+

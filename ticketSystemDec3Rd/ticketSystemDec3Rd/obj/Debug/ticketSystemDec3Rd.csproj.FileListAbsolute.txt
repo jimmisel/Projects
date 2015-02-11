@@ -1,0 +1,6 @@
+C:\Projects\ticketSystemDec3Rd\ticketSystemDec3Rd\bin\ticketSystemDec3Rd.dll.config
+C:\Projects\ticketSystemDec3Rd\ticketSystemDec3Rd\bin\ticketSystemDec3Rd.dll
+C:\Projects\ticketSystemDec3Rd\ticketSystemDec3Rd\bin\ticketSystemDec3Rd.pdb
+C:\Projects\ticketSystemDec3Rd\ticketSystemDec3Rd\obj\Debug\ticketSystemDec3Rd.csprojResolveAssemblyReference.cache
+C:\Projects\ticketSystemDec3Rd\ticketSystemDec3Rd\obj\Debug\ticketSystemDec3Rd.dll
+C:\Projects\ticketSystemDec3Rd\ticketSystemDec3Rd\obj\Debug\ticketSystemDec3Rd.pdb

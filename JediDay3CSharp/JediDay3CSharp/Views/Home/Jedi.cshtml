@@ -1,0 +1,23 @@
+﻿@using JediDay3CSharp.Models
+@model ShowChars
+@{
+    ViewBag.Title = "Jedi";
+}
+
+<h2>Jedi</h2>
+
+
+@foreach (var j in Model.Characters.OfType<Jedi>())
+{
+    <div>
+        <p>
+
+            @j.Name<br />
+            @j.Type<br />
+            @j.Race<br />
+            @j.LightSaberColor
+
+        </p>
+    </div>
+
+}

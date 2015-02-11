@@ -1,0 +1,6 @@
+C:\Projects\toDoListHomeWork\toDoListHomeWork\bin\toDoListHomeWork.dll.config
+C:\Projects\toDoListHomeWork\toDoListHomeWork\bin\toDoListHomeWork.dll
+C:\Projects\toDoListHomeWork\toDoListHomeWork\bin\toDoListHomeWork.pdb
+C:\Projects\toDoListHomeWork\toDoListHomeWork\obj\Debug\toDoListHomeWork.csprojResolveAssemblyReference.cache
+C:\Projects\toDoListHomeWork\toDoListHomeWork\obj\Debug\toDoListHomeWork.dll
+C:\Projects\toDoListHomeWork\toDoListHomeWork\obj\Debug\toDoListHomeWork.pdb

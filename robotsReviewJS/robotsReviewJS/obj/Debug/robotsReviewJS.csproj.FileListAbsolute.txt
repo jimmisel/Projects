@@ -1,0 +1,6 @@
+C:\Projects\robotsReviewJS\robotsReviewJS\bin\robotsReviewJS.dll.config
+C:\Projects\robotsReviewJS\robotsReviewJS\bin\robotsReviewJS.dll
+C:\Projects\robotsReviewJS\robotsReviewJS\bin\robotsReviewJS.pdb
+C:\Projects\robotsReviewJS\robotsReviewJS\obj\Debug\robotsReviewJS.csprojResolveAssemblyReference.cache
+C:\Projects\robotsReviewJS\robotsReviewJS\obj\Debug\robotsReviewJS.dll
+C:\Projects\robotsReviewJS\robotsReviewJS\obj\Debug\robotsReviewJS.pdb

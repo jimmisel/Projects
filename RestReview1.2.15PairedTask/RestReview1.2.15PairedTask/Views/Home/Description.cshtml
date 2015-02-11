@@ -1,0 +1,38 @@
+﻿@model RestReview1._2._15PairedTask.Models.RestReviewView
+@{
+    ViewBag.Title = "Description";
+}
+
+<h2>Description</h2>
+
+
+
+Name of Restraunt: <strong>@Model.Name</strong><br />
+@Model.Text<br />
+<img src="@Model.Image"><br />
+Type of Cuisine offered:<strong>@Model.Cuisine</strong> <br />
+<p>
+   <small>Last Update: @Model.DateUpdated</small> 
+</p>
+
+Coment section will go here:<br/>
+Need to create the comment stuff yet<br />
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(m => m.Comment)<br />
+        @Html.TextBoxFor(m => m.Comment)
+    </div>
+    <div>
+        @Html.LabelFor(m => m.Text)<br />
+        @Html.TextAreaFor(m => m.Text)
+    </div>
+
+
+    <div>
+        <input type="submit" value="Create" />
+    </div>
+}
+
+
+also need a rating system to be added but i want that in the top right side of the page

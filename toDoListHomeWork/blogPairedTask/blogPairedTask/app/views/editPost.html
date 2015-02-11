@@ -1,0 +1,17 @@
+﻿<div class="container">
+    <div class="row clearfix">
+        <div class="col-md-12 column">
+            <div class="form-group">
+                <label for="Title">Title</label><input type="text" class="form-control" value={{etitle}} ng-model="etitle" />
+            </div>
+            <div class="form-group">
+                <textarea ng-model="ebody">{{ebody}}</textarea>
+            </div>
+            {{post.id}}<br />
+            {{post.blogTitle}}<br />
+            {{post.blogBody}}<br />
+
+            <button type="submit" class="btn btn-default" ng-click="updatePost('{{post.id}}')">Submit</button>
+        </div>
+    </div>
+</div>

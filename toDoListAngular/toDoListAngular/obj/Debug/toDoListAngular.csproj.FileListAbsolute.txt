@@ -1,0 +1,6 @@
+C:\Projects\toDoListAngular\toDoListAngular\bin\toDoListAngular.dll.config
+C:\Projects\toDoListAngular\toDoListAngular\bin\toDoListAngular.dll
+C:\Projects\toDoListAngular\toDoListAngular\bin\toDoListAngular.pdb
+C:\Projects\toDoListAngular\toDoListAngular\obj\Debug\toDoListAngular.csprojResolveAssemblyReference.cache
+C:\Projects\toDoListAngular\toDoListAngular\obj\Debug\toDoListAngular.dll
+C:\Projects\toDoListAngular\toDoListAngular\obj\Debug\toDoListAngular.pdb

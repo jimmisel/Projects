@@ -1,0 +1,6 @@
+C:\Projects\day5InClass\day5InClass\bin\day5InClass.dll.config
+C:\Projects\day5InClass\day5InClass\bin\day5InClass.dll
+C:\Projects\day5InClass\day5InClass\bin\day5InClass.pdb
+C:\Projects\day5InClass\day5InClass\obj\Debug\day5InClass.csprojResolveAssemblyReference.cache
+C:\Projects\day5InClass\day5InClass\obj\Debug\day5InClass.dll
+C:\Projects\day5InClass\day5InClass\obj\Debug\day5InClass.pdb

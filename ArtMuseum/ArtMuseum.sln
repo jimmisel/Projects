@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.31101.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtMuseum", "ArtMuseum\ArtMuseum.csproj", "{DC43AD4F-B1CB-4D26-9BD1-B11F6DBCFD76}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtMuseum.Data", "ArtMuseum.Data\ArtMuseum.Data.csproj", "{F71C40B1-84DB-40AD-BE4D-C2FA66F364D2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtMuseum.Data.Models", "ArtMuseum.Data.Models\ArtMuseum.Data.Models.csproj", "{5BB5399F-5F1E-47CC-B95B-255A975D67F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DC43AD4F-B1CB-4D26-9BD1-B11F6DBCFD76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DC43AD4F-B1CB-4D26-9BD1-B11F6DBCFD76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DC43AD4F-B1CB-4D26-9BD1-B11F6DBCFD76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DC43AD4F-B1CB-4D26-9BD1-B11F6DBCFD76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F71C40B1-84DB-40AD-BE4D-C2FA66F364D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F71C40B1-84DB-40AD-BE4D-C2FA66F364D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F71C40B1-84DB-40AD-BE4D-C2FA66F364D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F71C40B1-84DB-40AD-BE4D-C2FA66F364D2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5BB5399F-5F1E-47CC-B95B-255A975D67F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5BB5399F-5F1E-47CC-B95B-255A975D67F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5BB5399F-5F1E-47CC-B95B-255A975D67F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5BB5399F-5F1E-47CC-B95B-255A975D67F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

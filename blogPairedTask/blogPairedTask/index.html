@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="blogApp">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body style="background-color:#0080FF">
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <nav class="navbar navbar-default" role="navigation">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button> <a class="navbar-brand" href="#/"><img src="https://www.codercamps.com/images/metroicons/gears/gear_256x256.png" height="30" width="30"></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li >
+                                <a href="#/">home</a>
+                            </li>
+                            <li>
+                                <a href="#/new">New Post</a>
+                            </li>
+                           
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+            <div class="col-md-12 column">
+                <div class="col-md-3 column" style="background-color:#ffffff; min-height:300px"></div>
+                 <div class="col-md-6 column" ng-view="" style="background-color:#ffffff; margin-left:10px; margin-right:10px">
+
+                    </div>
+               
+                <div class="col-md-2 column" style="background-color:#ffffff; min-height:300px"></div>
+                </div>
+        </div>
+
+   
+
+
+
+
+
+
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-route.js"></script>
+    <script src="Scripts/moment.js"></script>
+    <script src="Scripts/angular-moment.js"></script>
+   
+    
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/services/BlogService.js"></script>
+    
+    <script src="app/controllers/BlogController.js"></script>
+    
+</body>
+</html>

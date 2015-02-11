@@ -1,0 +1,49 @@
+﻿@using Portfolio.Models
+@model HomeViewModels
+@{
+    ViewBag.Title = "EditPost";
+}
+
+<h2>EditPost</h2>
+@using(Html.BeginForm())
+{
+    <div>
+    <p>
+        Title:<br />
+    </p>
+    <div class="form-group ">
+        @Html.TextBoxFor(m => m.Title, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <p>
+        Image:<br />
+    </p>
+    <div class="form-group ">
+        @Html.TextBoxFor(m => m.ImgUrl, new { @class = "form-control" })
+
+    </div>
+        <p>
+            Body:<br />
+        </p>
+    <div class="form-group ">
+        @Html.TextAreaFor(m => m.Body, new { @class = "form-control" })
+    </div>
+
+    <p>
+        Mark to delete:<br />
+    </p>
+    <div class="form-group ">
+        @Html.CheckBoxFor(m => m.IsDeleted)
+    </div>
+
+
+        @Html.HiddenFor(m => m.BlogId)
+    
+
+
+    <p>
+        <input type="submit" class="btn btn-default" value="Submit" />
+    </p>
+                                
+}

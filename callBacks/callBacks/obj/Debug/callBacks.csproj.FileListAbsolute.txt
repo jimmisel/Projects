@@ -1,0 +1,6 @@
+C:\Projects\callBacks\callBacks\bin\callBacks.dll.config
+C:\Projects\callBacks\callBacks\bin\callBacks.dll
+C:\Projects\callBacks\callBacks\bin\callBacks.pdb
+C:\Projects\callBacks\callBacks\obj\Debug\callBacks.csprojResolveAssemblyReference.cache
+C:\Projects\callBacks\callBacks\obj\Debug\callBacks.dll
+C:\Projects\callBacks\callBacks\obj\Debug\callBacks.pdb

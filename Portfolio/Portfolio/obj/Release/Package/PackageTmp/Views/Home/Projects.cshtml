@@ -1,0 +1,50 @@
+﻿@model Portfolio.Models.HomeIndexViewModels
+
+@{
+    ViewBag.Title = "My Work";
+    //add any needed variables to this section for this page.
+}
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $('#ActivePost').DataTable({
+                searching: false,
+                ordering: false,
+                paging: true
+            });
+        });
+    </script>
+}
+<!-- Add the homeIndexViewModel to the top of this page also need to get my layout for this picked out and the layout file adjusted this page will display the Blog posts-->
+
+
+<div>
+
+    @foreach (var b in Model.BlogPost)
+    {
+        if (b.IsDeleted == false)
+        {
+            <div class="row table-bordered" style="padding-top:10px;padding-bottom:10px; margin:10px; border-radius:5px; border-style:groove; border-color:steelblue;">
+                <div class="col-md-7">
+                    <center>
+                        <img class="img-responsive" style="height:150px; width:700px; border-radius:5px" src="@b.ImgUrl ">
+                    </center>
+
+
+                </div>
+                <div class="col-md-5">
+                    <h3> @b.Title</h3>
+                    <h4> @b.DatePosted.ToShortTimeString() @b.DatePosted.ToLongDateString()</h4>
+                    <p>@Html.Raw(b.Body.Length > 100 ? b.Body.Substring(0, 100) : b.Body)...</p>
+
+                    <a class="btn btn-primary" href="/Home/ViewPost/@b.BlogId">View  <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+                </div>
+            </div>
+
+        }
+
+
+    }
+</div>

@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3>
+                    Student Information
+                </h3>
+                <p>
+                   Student information includding average Gpa
+                </p>
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-6 column">
+                
+                <div class="form-group">
+                    <label for="firstName">First Name</label><input type="text" class="form-control" id="firstName" />
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label><input type="text" class="form-control" id="lastName" />
+                </div>
+                <div class="form-group">
+                    <label for="courses">Courses</label><input type="text" class="form-control" id="courses" />
+                </div>
+                <div class="form-group">
+                    <label for="gpa">Gpa</label><input type="text" class="form-control" id="gpa" />
+                </div>
+                <button type="submit" class="btn btn-default" onclick="studentData.createStudents()">Submit</button>
+
+
+
+
+            </div>
+            <div class="col-md-6 column" id="studentDisplay">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="Scripts/jquery-1.9.0.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\bin\Debug\1.7.2015PeopleEf.DataModel.dll.config
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\bin\Debug\1.7.2015PeopleEf.DataModel.dll
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\bin\Debug\1.7.2015PeopleEf.DataModel.pdb
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\bin\Debug\EntityFramework.dll
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\bin\Debug\EntityFramework.xml
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\obj\Debug\1.7.2015PeopleEf.DataModel.csprojResolveAssemblyReference.cache
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\obj\Debug\1.7.2015PeopleEf.DataModel.dll
+C:\Projects\1.7.2015PeopleEF\1.7.2015PeopleEf.DataModel\obj\Debug\1.7.2015PeopleEf.DataModel.pdb

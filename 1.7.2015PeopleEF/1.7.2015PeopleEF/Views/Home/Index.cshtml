@@ -1,0 +1,14 @@
+﻿@using _1._7._2015PeopleEF.Models 
+@model PeopleIndexViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var p in Model.persons)
+{
+    <p>
+        @p.FirstName<br />
+        @p.LastName
+    </p>
+   
+}

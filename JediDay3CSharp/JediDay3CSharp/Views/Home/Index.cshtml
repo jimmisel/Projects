@@ -1,0 +1,19 @@
+﻿@using JediDay3CSharp.Models
+@model ShowChars
+@{
+    ViewBag.Title = "Star Wars stuff";
+}
+<h2>All star wars Characters</h2>
+@foreach (var t in Model.Characters)
+{
+    <div>
+        <p>
+
+            @t.Name<br />
+            @t.Type<br />
+            @t.Race
+
+        </p>
+    </div>
+
+}

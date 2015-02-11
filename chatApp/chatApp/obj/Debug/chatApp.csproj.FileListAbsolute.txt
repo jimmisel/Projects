@@ -1,0 +1,6 @@
+C:\Projects\chatApp\chatApp\bin\chatApp.dll.config
+C:\Projects\chatApp\chatApp\bin\chatApp.dll
+C:\Projects\chatApp\chatApp\bin\chatApp.pdb
+C:\Projects\chatApp\chatApp\obj\Debug\chatApp.csprojResolveAssemblyReference.cache
+C:\Projects\chatApp\chatApp\obj\Debug\chatApp.dll
+C:\Projects\chatApp\chatApp\obj\Debug\chatApp.pdb

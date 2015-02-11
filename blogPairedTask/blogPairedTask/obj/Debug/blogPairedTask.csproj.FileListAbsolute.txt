@@ -1,0 +1,6 @@
+C:\Projects\blogPairedTask\blogPairedTask\bin\blogPairedTask.dll.config
+C:\Projects\blogPairedTask\blogPairedTask\bin\blogPairedTask.dll
+C:\Projects\blogPairedTask\blogPairedTask\bin\blogPairedTask.pdb
+C:\Projects\blogPairedTask\blogPairedTask\obj\Debug\blogPairedTask.csprojResolveAssemblyReference.cache
+C:\Projects\blogPairedTask\blogPairedTask\obj\Debug\blogPairedTask.dll
+C:\Projects\blogPairedTask\blogPairedTask\obj\Debug\blogPairedTask.pdb

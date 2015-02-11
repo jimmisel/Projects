@@ -1,0 +1,8 @@
+﻿<div class="table-bordered col-md-12 column "  ng-repeat="index in blogPost" style="background-color:#ffffff; margin:10px 10px 10px 10px">
+    <a href="#/view/{{index.id}}">
+        <h2>{{index.blogTitle}}</h2>
+    </a>
+    Created by:{{index.author}}<br />
+    Created on:  {{index.timestamp| amCalendar}}<br />
+    {{index.blogBody|limitTo:100}}...
+</div>

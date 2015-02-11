@@ -1,0 +1,13 @@
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\ArtMuseum.Data.Models.dll.config
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\ArtMuseum.Data.Models.dll
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\ArtMuseum.Data.Models.pdb
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\EntityFramework.dll
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\EntityFramework.SqlServer.dll
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\EntityFramework.xml
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\obj\Debug\ArtMuseum.Data.Models.dll
+C:\Projects\ArtMuseum\ArtMuseum.Data.Models\obj\Debug\ArtMuseum.Data.Models.pdb

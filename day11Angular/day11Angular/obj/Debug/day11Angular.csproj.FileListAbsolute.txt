@@ -1,0 +1,6 @@
+C:\Projects\day11Angular\day11Angular\bin\day11Angular.dll.config
+C:\Projects\day11Angular\day11Angular\bin\day11Angular.dll
+C:\Projects\day11Angular\day11Angular\bin\day11Angular.pdb
+C:\Projects\day11Angular\day11Angular\obj\Debug\day11Angular.csprojResolveAssemblyReference.cache
+C:\Projects\day11Angular\day11Angular\obj\Debug\day11Angular.dll
+C:\Projects\day11Angular\day11Angular\obj\Debug\day11Angular.pdb

@@ -1,0 +1,6 @@
+C:\Projects\CSharpHomeWorkDay1\CSharpHomeWorkDay1\bin\Debug\CSharpHomeWorkDay1.exe.config
+C:\Projects\CSharpHomeWorkDay1\CSharpHomeWorkDay1\bin\Debug\CSharpHomeWorkDay1.exe
+C:\Projects\CSharpHomeWorkDay1\CSharpHomeWorkDay1\bin\Debug\CSharpHomeWorkDay1.pdb
+C:\Projects\CSharpHomeWorkDay1\CSharpHomeWorkDay1\obj\Debug\CSharpHomeWorkDay1.csprojResolveAssemblyReference.cache
+C:\Projects\CSharpHomeWorkDay1\CSharpHomeWorkDay1\obj\Debug\CSharpHomeWorkDay1.exe
+C:\Projects\CSharpHomeWorkDay1\CSharpHomeWorkDay1\obj\Debug\CSharpHomeWorkDay1.pdb

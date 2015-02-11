@@ -1,0 +1,116 @@
+﻿@model Portfolio.Models.ForumIndexViewModels
+
+@{
+    ViewBag.Title = "Forum";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts {
+    <script>
+        $(document).ready(function () {
+
+            $('#myForumIndex').DataTable({
+                searching: false,
+                ordering: false,
+                paging: true
+            });
+    });
+    </script>
+}
+<div>
+    <div style=" margin:25px auto; padding-bottom:50px">
+        
+        
+        
+                <div class="btn-warning" style="height:75px; width:100px; border-radius:5px; align-content:center; float:right">
+                    <center>
+                        <span style="font-size:2.5em">  @Model.PostCount </span><br />Total post
+                    </center>
+                </div>
+            
+       @if (User.Identity.IsAuthenticated)
+       {
+        <div style="height:20px;  width:20px; border-radius:5px; ">
+            <center>
+                <a href="/Forum/NewPost">
+                    <input type="submit" class="btn btn-success" value="New Post" style="height:75px; width:100px;" />
+                </a>
+
+            </center>
+        </div>
+       }
+    </div>
+
+   
+
+    <div >
+        <table style=" text-align:center;" class="table" id="myForumIndex">
+          <thead>
+            <tr>
+                <th style="border:none"></th>
+                <th style="border:none"></th>
+                <th style="border:none"></th>
+                <th style="border:none"></th>
+            </tr>
+          </thead>
+            <tbody>
+                @foreach (var p in Model.Posts)
+                {
+                    if (p.IsDeleted == false)
+                    {
+
+
+
+
+                        <tr>
+                            @if (p.AnswerCount == 0)
+                            {
+                                <td class="btn-danger" style="border-radius:5px; height:3em; width:2.5em"><center><span style="font-size:2.5em">@p.AnswerCount</span><br />Answers</center></td>
+                            }
+                            else
+                            {
+                                <td class="btn-success" style="border-radius:5px; height:3em; width:2.5em"><center><span style="font-size:2.5em">@p.AnswerCount</span><br />Answers</center></td>
+                            }
+                            @if (p.PostViews == 0)
+                            {
+                                <td class="btn-warning" style="border-radius:5px;height:3em; width:2.5em"><center><span style="font-size:2.5em">@p.PostViews</span><br />Views</center></td>
+                            }
+                            else
+                            {
+                                <td class="btn-info" style="border-radius:5px;height:3em; width:2.5em"><center><span style="font-size:2.5em; ">@p.PostViews</span><br />Views</center></td>
+                            }
+
+                            <td>
+                                <span style="font-size:1.3em">
+                                    @Html.ActionLink(p.Title, "SingleView", new { id = p.PostId })
+                                </span><br />
+                                <span style="font-size:.8em"> @p.DatePosted.ToShortTimeString() @p.DatePosted.ToLongDateString()</span>
+                            </td>
+                            <td> <span style="font-size:1.3em">@p.DisplayName</span><br /></td>
+
+
+
+                        </tr>
+
+
+
+
+                    }
+
+
+                }
+            </tbody>
+        </table>
+
+    </div>
+</div>
+@if (!User.Identity.IsAuthenticated)
+{
+    <div style="border-top:double; border-color:black; margin:20px">
+        <p>
+            <center>
+                <b>Please <a href="/Account/Register">Register</a>  or <a href="/Account/Login">log in</a>   to Reply To any of these Post</b>
+            </center>
+
+        </p>
+    </div>
+}

@@ -1,0 +1,7 @@
+﻿<div class="table-bordered" ng-repeat="index in blogPost">
+    <a href="#/view/{{index.id}}">
+        <h2>{{index.blogTitle}}</h2></a>
+    Created by:{{index.author}}<br />
+  Created on:  {{index.timestamp| amCalendar}}<br/>
+        {{index.blogBody}}
+</div>

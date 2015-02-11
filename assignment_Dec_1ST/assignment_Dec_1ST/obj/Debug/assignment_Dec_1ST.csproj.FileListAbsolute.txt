@@ -1,0 +1,6 @@
+C:\Projects\assignment_Dec_1ST\assignment_Dec_1ST\bin\assignment_Dec_1ST.dll.config
+C:\Projects\assignment_Dec_1ST\assignment_Dec_1ST\bin\assignment_Dec_1ST.dll
+C:\Projects\assignment_Dec_1ST\assignment_Dec_1ST\bin\assignment_Dec_1ST.pdb
+C:\Projects\assignment_Dec_1ST\assignment_Dec_1ST\obj\Debug\assignment_Dec_1ST.csprojResolveAssemblyReference.cache
+C:\Projects\assignment_Dec_1ST\assignment_Dec_1ST\obj\Debug\assignment_Dec_1ST.dll
+C:\Projects\assignment_Dec_1ST\assignment_Dec_1ST\obj\Debug\assignment_Dec_1ST.pdb

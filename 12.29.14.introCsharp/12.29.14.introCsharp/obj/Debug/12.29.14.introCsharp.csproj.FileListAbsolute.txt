@@ -1,0 +1,6 @@
+C:\Projects\12.29.14.introCsharp\12.29.14.introCsharp\bin\Debug\12.29.14.introCsharp.exe.config
+C:\Projects\12.29.14.introCsharp\12.29.14.introCsharp\bin\Debug\12.29.14.introCsharp.exe
+C:\Projects\12.29.14.introCsharp\12.29.14.introCsharp\bin\Debug\12.29.14.introCsharp.pdb
+C:\Projects\12.29.14.introCsharp\12.29.14.introCsharp\obj\Debug\12.29.14.introCsharp.csprojResolveAssemblyReference.cache
+C:\Projects\12.29.14.introCsharp\12.29.14.introCsharp\obj\Debug\12.29.14.introCsharp.exe
+C:\Projects\12.29.14.introCsharp\12.29.14.introCsharp\obj\Debug\12.29.14.introCsharp.pdb

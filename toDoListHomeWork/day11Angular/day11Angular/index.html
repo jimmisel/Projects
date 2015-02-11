@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="myApp">
+<head>
+    <title></title>
+</head>
+<body>
+    <div ng-controller="IndexController">
+        <p>Enter your name: <input type="text" ng-model="name" /></p>
+        <p>Enter your message: <input type="text" ng-model="message" /></p>
+        <p><input type="button" value="Submit" ng-click="addMessage()" /></p>
+     <table>
+         <tr>
+             <th>Name</th>
+             <th>Message</th>
+         </tr>
+         <tr ng-repeat="m in chatArray">
+             <td>{{m.name}}</td>
+             <td>{{m.message}}</td>
+             <td><input type='button' value='Remove' ng-click="removeMessage(m)"/></td>
+         </tr>
+     </table>
+
+    </div>
+    <div ng-controller="nameController">
+        
+        <p>Enter your Number: <input type="text" ng-model="num" /></p>
+        
+        <p> {{double(num)}}</p>
+
+    </div>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/services/messageService.js"></script>
+    <script src="app/controllers/messageController.js"></script>
+    <script src="app/controllers/nameController.js"></script>
+    
+</body>
+</html>

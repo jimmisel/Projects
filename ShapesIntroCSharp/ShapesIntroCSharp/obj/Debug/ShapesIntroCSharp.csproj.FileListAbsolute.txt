@@ -1,0 +1,6 @@
+C:\Projects\ShapesIntroCSharp\ShapesIntroCSharp\bin\Debug\ShapesIntroCSharp.exe.config
+C:\Projects\ShapesIntroCSharp\ShapesIntroCSharp\bin\Debug\ShapesIntroCSharp.exe
+C:\Projects\ShapesIntroCSharp\ShapesIntroCSharp\bin\Debug\ShapesIntroCSharp.pdb
+C:\Projects\ShapesIntroCSharp\ShapesIntroCSharp\obj\Debug\ShapesIntroCSharp.csprojResolveAssemblyReference.cache
+C:\Projects\ShapesIntroCSharp\ShapesIntroCSharp\obj\Debug\ShapesIntroCSharp.exe
+C:\Projects\ShapesIntroCSharp\ShapesIntroCSharp\obj\Debug\ShapesIntroCSharp.pdb

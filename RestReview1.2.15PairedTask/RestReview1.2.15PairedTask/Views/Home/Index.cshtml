@@ -1,0 +1,26 @@
+﻿@model RestReview1._2._15PairedTask.Models.RestReviewIndexViewModel
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<table class="table table-bordered table-striped">
+    <tr>
+        <th>Name</th>
+        <th>Date Updated</th>
+        <th>Cuisine</th>
+        <th>Image</th>
+        <th>View Full</th>
+    </tr>
+    @foreach (var r in Model.Reviews)
+    {
+        <tr>
+            <td>@r.Name</td>
+            <td>@r.DateUpdated</td>
+            <td>@r.Cuisine</td>
+            <td><img src="@r.Image" height="200" width="200" /></td>
+            <td>@Html.ActionLink("View", "Description", new { Id = r.Id })</td>
+        </tr>
+    }
+
+
+</table>

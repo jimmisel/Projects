@@ -1,0 +1,6 @@
+C:\Projects\carProject\carProject\bin\carProject.dll.config
+C:\Projects\carProject\carProject\bin\carProject.dll
+C:\Projects\carProject\carProject\bin\carProject.pdb
+C:\Projects\carProject\carProject\obj\Debug\carProject.csprojResolveAssemblyReference.cache
+C:\Projects\carProject\carProject\obj\Debug\carProject.dll
+C:\Projects\carProject\carProject\obj\Debug\carProject.pdb

@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <link href="Content/bootstrap-theme.css" rel="stylesheet" />
+</head>
+<body>
+
+
+
+    <div class="container">
+        <div class="row clearfix">
+            <div class="col-md-12 column">
+                <h3>
+                    Create Your space ship
+                </h3>
+                <p>
+
+                </p>
+
+
+                <div class="modal fade" id="modal-container-425767" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    Edit your ship
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <div class="form-group">
+                                    <label for="Name">Name:</label><input type="text" class="form-control" id="modalName" />
+                                </div>
+                                <div class="form-group">
+                                    <label for="Type">Type:</label><input type="text" class="form-control" id="modalType" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="hidden" id="hiddenId" />
+                                    <label for="Image">Image:</label><input type="text" class="form-control" id="modalImage" />
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-primary" onclick="spaceApp.saveShip()" data-dismiss="modal">Save changes</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="row clearfix">
+            <div class="col-md-6 column">
+
+                <div class="form-group">
+                    <label for="Name">Name:</label><input type="text" class="form-control" id="name" />
+                </div>
+                <div class="form-group">
+                    <label for="Type">Type:</label><input type="text" class="form-control" id="type" />
+                </div>
+                <div class="form-group">
+                    <label for="Image">Image:</label><input type="text" class="form-control" id="image" />
+                </div>
+                <button type="submit" class="btn btn-default" onclick="spaceApp.dockShip()">Submit</button>
+            </div>
+            <div class="col-md-6 column" id="display">
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

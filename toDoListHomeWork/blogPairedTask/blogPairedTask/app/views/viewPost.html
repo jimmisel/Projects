@@ -1,0 +1,8 @@
+﻿<div class="table-bordered">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true" ng-click="deletePost()">×</button>
+    <h2>{{post.blogTitle}}</h2>
+    Created by:{{post.author}}<br />
+  created On:{{post.timestamp| amCalendar}}<br />
+    {{post.blogBody}}
+   <p><a href="#/edit/{{post.id}}">Edit this post</a></p> 
+</div>

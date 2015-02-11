@@ -1,0 +1,16 @@
+﻿@model IEnumerable<DavesList.Models.Product>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+@foreach (var item in Model)
+{
+    <div>
+        <p>
+            @Html.ActionLink(item.Title, "Contact", new { id = item.Id },null)<br/>
+            
+            @item.Description
+        </p>
+    </div>
+    
+}

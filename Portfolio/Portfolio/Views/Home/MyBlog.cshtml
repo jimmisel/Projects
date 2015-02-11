@@ -1,0 +1,66 @@
+﻿
+@{
+    ViewBag.Title = "MyBlog";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts {
+    <script>
+
+        $(document).ready(function () {
+            $.ajaxPrefilter(function (options) {
+                if (options.crossDomain && jQuery.support.cors) {
+                    var http = (window.location.protocol === 'http:' ? 'http:' : 'https:');
+                    options.url = http + '//cors-anywhere.herokuapp.com/' + options.url;
+                    //options.url = "http://cors.corsproxy.io/url=" + options.url;
+                }
+            });
+
+
+            $('#click').click(function () {
+
+        $.ajax({
+            type: 'GET',
+            url: 'http://jimstechinfo.com/feed/',
+
+            beforeSend: function () {
+                // this is where we append a loading image
+                $('#test').html('<div class="loading"><center><img src="/Content/Images/loader.gif" alt="Loading..." /></center></div>');
+            },
+            success: function (data) {
+                // successful request; do something with the data
+                $('#test').empty();
+                $(data).find('item').each(function (i) {
+                    $('#test').append('<h4>' + $(this).find('title').text() + '</h4><p><a href="' + $(this).find('link').text() + '" target="_blank" >' + $(this).find('link').text() + '</a><br />' + $(this).find('description').text() + '</p>');
+                });
+            },
+            error: function () {
+                // failed request; give feedback to user
+                $('#test').html('<p class="error"><strong>Oops!</strong> Try that again in a few moments.</p>');
+            }
+        });
+
+            })
+
+        });
+
+
+
+
+    </script>
+}
+
+
+
+<div id="test">
+    Do You want to know more about me?<br />
+    If so go ahead and Click the button and I will load some of the post from my blog for you.<br />
+    <button id="click">Get in my head</button>
+</div>
+
+
+<div>
+
+  
+</div>
+
+

@@ -1,0 +1,6 @@
+C:\Projects\day6StartAjax\day6StartAjax\bin\day6StartAjax.dll.config
+C:\Projects\day6StartAjax\day6StartAjax\bin\day6StartAjax.dll
+C:\Projects\day6StartAjax\day6StartAjax\bin\day6StartAjax.pdb
+C:\Projects\day6StartAjax\day6StartAjax\obj\Debug\day6StartAjax.csprojResolveAssemblyReference.cache
+C:\Projects\day6StartAjax\day6StartAjax\obj\Debug\day6StartAjax.dll
+C:\Projects\day6StartAjax\day6StartAjax\obj\Debug\day6StartAjax.pdb

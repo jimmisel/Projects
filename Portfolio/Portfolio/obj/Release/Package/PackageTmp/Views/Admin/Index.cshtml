@@ -1,0 +1,69 @@
+﻿@using Portfolio.Models
+@model HomeIndexViewModels
+@{
+    ViewBag.Title = "Admin Index";
+}
+@section Scripts {
+<script>
+        $(document).ready(function () {
+
+            $('#ActivePost').DataTable({
+                searching: false,
+                ordering: true,
+                paging: true
+            });
+            $('#DeletedPost').DataTable({
+                searching: false,
+                ordering: true,
+                paging: true
+            });
+    });
+    </script>
+    }
+<div style="margin-top:25px">
+    <a href="/Admin/CreateBlog">
+        <input class="btn btn-success" type="button" value="New Project" />
+    </a>
+    <a href="/Admin/FrontPage">
+        <input class="btn btn-warning" type="button" value="Edit Front Page" />
+    </a>
+</div>
+
+
+<h2>Front page dashboard</h2>
+<p>
+    Click the name to go to the edit page
+</p>
+<p>
+  <strong>Active post</strong>  
+</p>
+<!--Set up tables and call the jquery to sort and page them -->
+<table class="table" id="ActivePost">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Date Posted</th>
+            <th>Id</th>
+            <th>Posted By</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        @foreach (var b in Model.BlogPost)
+        {
+            if (b.IsDeleted == false)
+            {
+                <tr>
+                    <td>@Html.ActionLink(b.Title + " ", "EditPost", new { id = b.BlogId })</td>
+                    <td>@b.DatePosted</td>
+                    <td>@b.BlogId</td>
+                    <td>@b.UserDisplayName</td>
+                </tr>
+
+            }
+        }
+    </tbody>
+</table>
+
+
+    

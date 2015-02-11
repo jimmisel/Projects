@@ -1,0 +1,6 @@
+C:\Projects\schoolRoster\schoolRoster\bin\schoolRoster.dll.config
+C:\Projects\schoolRoster\schoolRoster\bin\schoolRoster.dll
+C:\Projects\schoolRoster\schoolRoster\bin\schoolRoster.pdb
+C:\Projects\schoolRoster\schoolRoster\obj\Debug\schoolRoster.csprojResolveAssemblyReference.cache
+C:\Projects\schoolRoster\schoolRoster\obj\Debug\schoolRoster.dll
+C:\Projects\schoolRoster\schoolRoster\obj\Debug\schoolRoster.pdb
